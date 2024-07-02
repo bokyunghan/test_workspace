@@ -1,0 +1,23 @@
+package com.sh.cast.practice;
+
+import java.util.Scanner;
+
+public class CastingSample {
+	Scanner sc = new Scanner(System.in);
+	
+	public void printUnicode() {
+		System.out.println("문자 입력 : ");
+		char ch = sc.next().charAt(0);
+		System.out.println(ch + " is unicode : " + (int)ch);
+	}
+	public void calculatorScore(){
+		System.out.println("국어 : ");
+		float kor = sc.nextFloat();
+		System.out.println("영어 : ");
+		float eng = sc.nextFloat();
+		System.out.println("수학 : ");
+		float math = sc.nextFloat();
+		System.out.println("-----------------------------");
+		System.out.printf("총점 :%s " , (int)kor + eng + math);
+	}
+}
