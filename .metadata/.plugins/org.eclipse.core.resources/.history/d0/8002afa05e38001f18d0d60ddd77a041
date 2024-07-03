@@ -1,8 +1,0 @@
-package com.sh.test;
-
-public class Random {
-	public static void main(String[] args) {
-	Randomtest rd = new Randomtest();
-	rd.r1();
-	}
-}
