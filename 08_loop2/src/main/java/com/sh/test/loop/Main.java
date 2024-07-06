@@ -84,6 +84,7 @@ public class Main {
 		 System.out.println("==============================================");
 		 System.out.printf("평균나이 : %.1f세 | 평균신장 : %.1fcm | 평균몸무게 : %.1fkg", avgAge, avgHeight, avgWeight);
 	}
+	
 	public void test3() {
 	// price : 개당 가격, choice : 메뉴 선정, choiceCount : 메뉴 갯수, total : 선택 메뉴(1개) 총 가격, totalLast : 총 가격
 		        String menu = "김밥류 ==================\n"
@@ -151,11 +152,10 @@ public class Main {
 		        }
 
 		        System.out.println("==========================\n"
-		                + "주문하신 정보는 다음과 같습니다.");
-		        System.out.println("----------------------------");
+		                + "주문하신 정보는 다음과 같습니다.\n" + "----------------------------");
 
-		        for(String receipt : receiptList) {
-		            System.out.println(receipt);
+		        for(String receiptall : receiptList) {
+		            System.out.println(receiptall);
 		        }
 
 		        System.out.printf("합계 : %d원\n", totalLast);

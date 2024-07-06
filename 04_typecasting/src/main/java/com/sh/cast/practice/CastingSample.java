@@ -10,6 +10,7 @@ public class CastingSample {
 		char ch = sc.next().charAt(0);
 		System.out.println(ch + " is unicode : " + (int)ch);
 	}
+	
 	public void calculatorScore(){
 		System.out.println("국어 : ");
 		double kor = sc.nextDouble();
