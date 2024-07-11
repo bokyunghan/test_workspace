@@ -190,40 +190,42 @@ public class Main {
 	}
 	// 2차원 배열에 들어있는 데이터들 중 3의 배수만 골라내서 새로운 1차원 배열에 기록하고 출력 (단, 중복 값은 하나만 기록)
 	public void test10() {
-		int[][] array = {
-				{12, 41, 36, 56}, 
-				{82, 10, 12, 61}, 
-				{14, 16, 18, 78}, 
-				{45, 26, 72, 68}
-			};
-			
-			//3의 배수가 몇개인지 알수 없으므로 최대크기의 배열을 우선 생성한다.
-			int[] copyArr = new int[array.length * array[0].length];
-			int copyIndex = 0;
-			
-			for(int i = 0; i < array.length; i++){
-				abc:
-				for(int j = 0; j < array[i].length; j++){
-					//3의 배수검사
-					if(array[i][j] % 3 == 0){
-						//중복검사 : 중복된 수가 있다면, copyArr에 담지 않는다.
-						for(int k = 0; k < copyIndex; k++){
-							if(copyArr[k] == array[i][j]){
-								continue abc;
-							}
-						}
-						copyArr[copyIndex++] = array[i][j];
-//						System.out.println(copyIndex+" : "+Arrays.toString(copyArr));
-					}		
-				}
-			}
-			
-			//출력
-			System.out.print("3의 배수 =[");
-			for(int i = 0; i < copyIndex; i++)
-				System.out.print(copyArr[i] + (i != copyIndex-1?", ":""));
-			System.out.println("]");
-		}
+		// 2차원 배열 선언 및 초기화
+	    int[][] array = {
+	        {12, 41, 36, 56}, 
+	        {82, 10, 12, 61}, 
+	        {14, 16, 18, 78}, 
+	        {45, 26, 72, 68}};
+	    
+	    // 3의 배수가 몇 개일지 모르므로 최대 크기의 배열을 생성한다.
+	    int[] copyArr = new int[array.length * array[0].length];
+	    int copyIndex = 0;
+	    
+	    // 2차원 배열을 순회
+	    for(int i = 0; i < array.length; i++){
+	        abc: // continue abc를 사용하여 바깥 루프를 제어하기 위해 라벨을 지정
+	        for(int j = 0; j < array[i].length; j++){
+	            // 3의 배수 검사
+	            if(array[i][j] % 3 == 0){
+	                // 중복 검사: 중복된 수가 있다면, copyArr에 담지 않는다.
+	                for(int k = 0; k < copyIndex; k++){
+	                    if(copyArr[k] == array[i][j]){
+	                        // 중복된 경우 다음 요소로 이동
+	                        continue abc;
+	                    }
+	                }
+	                // 중복이 아닌 경우 copyArr에 담는다.
+	                copyArr[copyIndex++] = array[i][j];
+	            }       
+	        }
+	    }
+	    
+	    // 출력
+	    System.out.print("3의 배수 =[");
+	    for(int i = 0; i < copyIndex; i++)
+	    	System.out.print(copyArr[i] + (i != copyIndex - 1 ? ", " : ""));
+	    System.out.println("]");
+	}
 }
 	
 
