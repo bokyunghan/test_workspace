@@ -37,7 +37,7 @@ public class Main {
 		System.out.println("성적 : ");
 		double score = sc.nextDouble();
 		
-		String gender1 = gender == 'M' ? "남" : "여";
+		String gender1 = gender == '남' ? "남" : "여";
 		System.out.println("--------------------");
 		System.out.printf("%d학년 %d반 %d번 %s학생 %s의 성적이 %.2f이다.", grade, classroom, num, gender, name ,score);
 		
