@@ -6,5 +6,6 @@
     <fullyQualifiedTypeName name="com.sh.var.Example"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.sh.oop.emp.model.vo.Employee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
