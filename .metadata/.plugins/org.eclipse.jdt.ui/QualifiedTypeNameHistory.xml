@@ -7,5 +7,13 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.sh.oop.emp.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="com.sh.oop.product.model.Product"/>
+    <fullyQualifiedTypeName name="com.sh.oop.coffee.model.dto.Coffee"/>
+    <fullyQualifiedTypeName name="com.sh.oop.coffee.controller.manager.CoffeeManager"/>
+    <fullyQualifiedTypeName name="com.sh.oop.person.model.Person"/>
+    <fullyQualifiedTypeName name="com.sh.oop.student.model.vo.Student"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.sh.oop.person.controller.PersonController"/>
+    <fullyQualifiedTypeName name="com.sh.oop.student.controller.StudentController"/>
+    <fullyQualifiedTypeName name="com.sh.oop.book.model.Book"/>
 </qualifiedTypeNameHistroy>

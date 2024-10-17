@@ -59,7 +59,7 @@ public class Main {
 		System.out.println("---------------------------");
 		double bmi = kg / (cm * cm); 
 		System.out.printf("BMI 지수 : %.2f\n", bmi);
-		if(bmi < 18.5) {
+		if(bmi < 18.5) { // 18.5 이하
 			System.out.println("저체중입니다.");
 		}
 		else if(bmi >= 18.5 && bmi < 23) {			
